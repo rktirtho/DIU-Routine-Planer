@@ -4,14 +4,18 @@
     Author     : DELL
 --%>
 
+<%@page import="com.dao.TeacherDatabaseManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean  class="com.bean.Teacher" id="teacher"></jsp:useBean>
+<jsp:setProperty name="teacher" property="*"></jsp:setProperty>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title><%=teacher.getName()%></title>
+    <% int status=TeacherDatabaseManager.registrationTeacher(teacher); %>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Registration Success <em style="color: #cc0033"><%=teacher.getName() %></em></h1>
     </body>
 </html>

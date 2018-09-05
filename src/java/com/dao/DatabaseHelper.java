@@ -23,7 +23,7 @@ public class DatabaseHelper {
     public static final String DB_PASSWORD="root";
     public static final String DB_USER_NAME="root";
     
-    public static final String TEACHER_TABLE_NAME="teachers";
+    public static final String TABLE_NAME_TEACHER="teachers";
     public static final String KEY_ID="id";
     public static final String KEY_TEACHER_ID="teacher_id";
     public static final String KEY_TEACHER_NAME="name";
@@ -32,7 +32,7 @@ public class DatabaseHelper {
     public static final String KEY_TEACHER_IMAGE="image_location";
     
     
-    public static final String TABLE_CREATION_TEACHER="CREATE TABLE IF NOT EXISTS "+TEACHER_TABLE_NAME+" ("+KEY_ID+
+    public static final String TABLE_CREATION_TEACHER="CREATE TABLE IF NOT EXISTS "+TABLE_NAME_TEACHER+" ("+KEY_ID+
             " int(11) NOT NULL AUTO_INCREMENT  PRIMARY KEY, "+ KEY_TEACHER_NAME+" varchar(20) NOT NULL,"+
             KEY_TEACHER_ID+" varchar(20) NOT NULL,"+KEY_TEACHER_DESIGNATION+" varchar(20) NOT NULL,"+
             KEY_TEACHER_PHONE_NUMBER+" varchar(20) NOT NULL,"+KEY_TEACHER_IMAGE+" varchar(20) NOT NULL)";
