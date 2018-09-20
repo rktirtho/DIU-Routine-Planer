@@ -15,10 +15,19 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author DELL
+ * @author Tirtho
  */
 public class TeacherDatabaseManager {
-
+    
+    
+    
+    
+                  
+    /**
+     * 
+     * @param teacher
+     * @return int 0 for insertion failed, 1 for success, 2 for already inserted
+     */               
     public static int registrationTeacher(Teacher teacher) {
         int status = 0;
         Connection connection = DatabaseHelper.getConnection();
